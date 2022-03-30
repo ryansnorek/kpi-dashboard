@@ -9,9 +9,11 @@ const initialValues = {
 function Header() {
   const [values, setValues] = useState(initialValues);
   const handleChange = (e) => {
+    const other = e.target.name === "spe" ? "tag" : "spe";
     const { name, value } = e.target;
-    setValues({ ...values, [name]: value });
+    setValues({ [name]: value, [other]: 0 });
   };
+
   return (
     <header>
       <div className="logo">
@@ -19,13 +21,13 @@ function Header() {
         <img className="badge" src="../badge.png" alt="badge-logo" />
       </div>
       <div className="filters">
-        <select name="spe" value={values.spe} onChange={handleChange}>
+        <select id="spe" name="spe" value={values.spe} onChange={handleChange}>
           <option value={0}>SPE</option>
           {spe.map((site) => {
             return <option value={site}>{site}</option>;
           })}
         </select>
-        <select name="tag" value={values.tag} onChange={handleChange}>
+        <select id="tag" name="tag" value={values.tag} onChange={handleChange}>
           <option value={0}>Tag</option>
           {spe.map((site) => {
             return <option value={site}>{site}</option>;

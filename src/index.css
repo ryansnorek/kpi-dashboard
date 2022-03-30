@@ -64,7 +64,7 @@ main {
   width: 85%;
 }
 * {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 header {
   display: flex;
@@ -90,6 +90,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   margin-left: 2%;
+  padding-left: 3%;
 }
 .filters select {
   font-weight: bold;
