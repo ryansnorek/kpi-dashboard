@@ -2,7 +2,7 @@
   --light: rgb(255, 255, 255);
   --darkerblue: rgb(13, 40, 81);
   --darkblue: rgb(15, 54, 113);
-  --orange: rgb(247, 172, 58);
+  --orange: rgb(233, 169, 74);
   --yellow: rgb(241, 210, 34);
   --grey: rgb(218, 218, 218);
 }
@@ -39,6 +39,9 @@ h2 {
 }
 h3 {
   font-size: 1rem;
+}
+select {
+  outline-color: var(--darkerblue);
 }
 button:hover {
   cursor: pointer;
@@ -191,13 +194,22 @@ header {
 }
 .quarterly .period {
   display: flex;
-  width: 75%;
+  justify-content: center;
+  margin: 6%;
 }
-.quarterly .period h3 {
-  width: 25%;
-  padding: 2%;
+.quarterly .period button {
+  padding: 2% 3%;
+  font-size: 1rem;
   text-align: center;
   color: var(--orange);
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  margin: 3%;
+  background-color: transparent;
+}
+#highlight {
+  background-color: rgba(255, 244, 184, 0.7);
 }
 .meter {
   width: 200px;
