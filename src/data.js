@@ -40,3 +40,53 @@ export const spe = [
   "AOAO Pearl Horizons",
   "Redstone",
 ];
+export const issues = [
+  {
+    name: "Install new panel",
+    type: "Broken Panel",
+    priority: "High",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Barry Oswald",
+    running_clock: "5.3"
+  },
+  {
+    name: "Fix the breakers",
+    type: "System Repair",
+    priority: "Medium",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Larry Smith",
+    running_clock: "3.4"
+  },
+  {
+    name: "Site inspection",
+    type: "Routine Maintenance",
+    priority: "Medium",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Barry Oswald",
+    running_clock: "12.9"
+  },
+  {
+    name: "Install new panel",
+    type: "Broken Panel",
+    priority: "High",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Barry Oswald",
+    running_clock: "5.3"
+  },
+  {
+    name: "Fix the breakers",
+    type: "System Repair",
+    priority: "Medium",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Larry Smith",
+    running_clock: "3.4"
+  },
+  {
+    name: "Site inspection",
+    type: "Routine Maintenance",
+    priority: "Medium",
+    assigned_by: "Joe Hobbs",
+    assigned_to: "Barry Oswald",
+    running_clock: "12.9"
+  }
+]

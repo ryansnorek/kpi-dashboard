@@ -1,9 +1,10 @@
 :root {
-  --light: #eee;
+  --light: rgb(255, 255, 255);
   --darkerblue: rgb(13, 40, 81);
   --darkblue: rgb(15, 54, 113);
   --orange: rgb(247, 172, 58);
   --yellow: rgb(241, 210, 34);
+  --grey: rgb(218, 218, 218);
 }
 html {
   scroll-behavior: smooth;
@@ -34,6 +35,7 @@ code {
 }
 h2 {
   font-size: 1.6rem;
+  color: var(--darkerblue);
 }
 h3 {
   font-size: 1rem;
@@ -44,7 +46,8 @@ button:hover {
 main {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .top {
   display: flex;
@@ -56,6 +59,9 @@ main {
 }
 .top .right {
   width: 30%;
+}
+.bottom {
+  width: 85%;
 }
 * {
   border: 1px solid grey;
@@ -86,7 +92,8 @@ header {
   margin-left: 2%;
 }
 .filters select {
-  width: 15vw;
+  font-weight: bold;
+  width: 12vw;
   height: 50%;
   margin: 0 1.5%;
   padding: 2%;
@@ -145,6 +152,7 @@ header {
 .performance .left {
   width: 25%;
   padding: 2% 3%;
+  height: fit-content;
 }
 .performance .metrics h3 {
   margin: 0;
@@ -197,4 +205,70 @@ header {
 }
 .meter h4 {
   margin: 0;
+}
+/* Issues -==--=-=-==--==-=-=-=--=-==-=-=- */
+.issues {
+  background-color: var(--light);
+  border-radius: 9px;
+  margin: 1.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 42vh;
+}
+.issues .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.issues .header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+}
+.issues .header h2 {
+  margin: .7% 2%;
+}
+.issues .header h4 {
+  color: var(--orange);
+  font-size: 0.8rem;
+  margin: 3%;
+}
+.issues .buttons {
+  width: 100%;
+  text-align: left;
+  margin-left: 3%;
+}
+.grid {
+  width: 100%;
+  margin-left: 3%;
+  display: grid;
+  grid-template-columns: repeat(6, 16%);
+  color: var(--darkblue);
+}
+.grid h4 {
+  font-size: 1rem;
+  margin: 3% 0;
+  border-bottom: 1px solid var(--grey);
+}
+.grid-items {
+  width: 100%;
+  margin-left: 3%;
+  display: grid;
+  grid-template-columns: repeat(6, 16%);
+  color: var(--darkblue);
+}
+.grid-items p {
+  margin: 0;
+  border-bottom: 1px solid var(--grey);
+  height: 20px; 
+}
+.issues .header select {
+  padding: 1%;
+  font-weight: bold;
+  width: 16vw;
+  margin: 1.5%;
+  padding: 1.5%;
+  border-radius: 9px;
 }
