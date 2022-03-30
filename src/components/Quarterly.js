@@ -1,3 +1,5 @@
+import Meter from "./charts/Meter";
+
 function Quarterly() {
   return (
     <section className="quarterly">
@@ -8,13 +10,9 @@ function Quarterly() {
         <h3>4Q22</h3>
       </div>
       <div className="meters">
-        <h3>estimated</h3>
-      </div>
-      <div className="meters">
-        <h3>guaranteed</h3>
-      </div>
-      <div className="meters">
-        <h3>predicted</h3>
+        <Meter meterValue={69} color={"grey"} />
+        <Meter meterValue={80} color={"rgb(15, 54, 113)"} />
+        <Meter meterValue={106} color={"rgb(241, 210, 34)"} />
       </div>
     </section>
   );

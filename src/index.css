@@ -101,7 +101,6 @@ header {
 .status .left h2 {
   margin-top: 0;
 }
-
 .status .right {
   display: flex;
   flex-direction: column;
@@ -185,6 +184,7 @@ header {
   text-align: center;
   color: var(--orange);
 }
-.quarterly .period .meters {
-  height: 25%;
+.meter {
+  width: 200px;
+  height: 150px;
 }
