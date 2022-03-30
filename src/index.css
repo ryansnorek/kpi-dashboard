@@ -42,17 +42,23 @@ button:hover {
   cursor: pointer;
 }
 main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top {
   display: flex;
   width: 85%;
 }
-main .left {
+.top .left {
   width: 70%;
+  height: 100%;
 }
-main .right {
+.top .right {
   width: 30%;
 }
 * {
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
 }
 header {
   display: flex;
@@ -92,7 +98,7 @@ header {
   border-radius: 9px;
   margin: 2%;
   display: flex;
-  height: fit-content;
+  height: 28vh;
 }
 .status .left {
   width: 60%;
@@ -131,7 +137,7 @@ header {
   border-radius: 9px;
   margin: 2%;
   display: flex;
-  height: fit-content;
+  height: 42vh;
 }
 .performance .left h2 {
   margin-top: 0;
@@ -168,11 +174,11 @@ header {
 .quarterly {
   background-color: var(--light);
   border-radius: 9px;
-  margin: 6%;
+  margin: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 71.8vh;
+  height: 72vh;
 }
 .quarterly .period {
   display: flex;
@@ -187,4 +193,8 @@ header {
 .meter {
   width: 200px;
   height: 150px;
+  text-align: center;
+}
+.meter h4 {
+  margin: 0;
 }

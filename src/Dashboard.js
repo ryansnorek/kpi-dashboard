@@ -7,17 +7,19 @@ function Dashboard() {
   return (
     <>
       <Header />
-    <div className="wrapper">
-      <main>
-        <div className="left">
-          <Status />
-          <Performance />
-        </div>
-        <div className="right">
-          <Quarterly />
-        </div>
-      </main>
-    </div>
+      <div className="wrapper">
+        <main>
+          <div className="top">
+            <div className="left">
+              <Status />
+              <Performance />
+            </div>
+            <div className="right">
+              <Quarterly />
+            </div>
+          </div>
+        </main>
+      </div>
     </>
   );
 }
