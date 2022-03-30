@@ -1,7 +1,7 @@
 :root {
   --light: rgb(255, 255, 255);
   --darkerblue: rgb(13, 40, 81);
-  --darkblue: rgb(15, 54, 113);
+  --darkblue: rgb(15, 54, 113, .9);
   --orange: rgb(233, 169, 74);
   --yellow: rgb(241, 210, 34);
   --grey: rgb(218, 218, 218);
@@ -35,13 +35,18 @@ code {
 }
 h2 {
   font-size: 1.6rem;
-  color: var(--darkerblue);
+  color: var(--darkblue);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 h3 {
   font-size: 1rem;
 }
 select {
-  outline-color: var(--darkerblue);
+  border: 1px solid var(--darkblue);
+  color: var(--darkblue);
+  font-size: 1.2rem;
+  outline-color: var(--darkblue);
 }
 button:hover {
   cursor: pointer;
@@ -96,12 +101,14 @@ header {
   padding-left: 3%;
 }
 .filters select {
-  font-weight: bold;
+  font-weight: 500;
   width: 12vw;
   height: 50%;
   margin: 0 1.5%;
   padding: 2%;
   border-radius: 9px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 /* Status -==--=-=-==--==-=-=-=--=-==-=-=- */
 .status {
@@ -159,7 +166,7 @@ header {
   height: fit-content;
 }
 .performance .metrics h3 {
-  margin: 0;
+  margin: 6% 0;
   padding: 0 2%;
   color: var(--orange);
 }
@@ -170,6 +177,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 3%;
+  margin-top: 4%;
 }
 .performance .period button {
   margin: 0 1.5%;
@@ -177,7 +185,8 @@ header {
   padding: 1.5% 3%;
   color: var(--orange);
   font-weight: bold;
-  border: 1px solid var(--orange);
+  border: none;
+  background-color: transparent;
 }
 .bar-chart {
   padding-right: 5%;
@@ -201,15 +210,18 @@ header {
   padding: 2% 3%;
   font-size: 1rem;
   text-align: center;
-  color: var(--orange);
+  color: var(--darkblue);
   border-radius: 6px;
   border: none;
-  font-weight: bold;
+  font-weight: 500;
   margin: 3%;
   background-color: transparent;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 #highlight {
-  background-color: rgba(255, 244, 184, 0.7);
+  /* background-color: rgba(255, 244, 184, 0.7); */
+  border: 1px solid var(--darkblue);
 }
 .meter {
   width: 200px;
