@@ -3,15 +3,21 @@ import ReactSpeedometer from "react-d3-speedometer";
 function Meter({ title, meterValue, color }) {
   return (
     <div className="meter">
-      <h4>{title}</h4>
       <ReactSpeedometer
         value={meterValue}
         height={100}
+        segments={6}
         fluidWidth={true}
         minValue={0}
         maxValue={120}
         needleTransitionDuration={1000}
         needleColor="black"
+        needleHeightRatio={.85}
+        ringWidth={30}
+        labelFontSize=".6rem"
+        currentValueText={`${title}/Produced: ${meterValue}%`}
+        textColor="rgb(15, 54, 113)"
+        valueTextFontSize=".8rem"
         segmentColors={[color]}
       />
     </div>
