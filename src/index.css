@@ -1,7 +1,9 @@
 :root {
-  --header: #eee;
+  --light: #eee;
   --darkerblue: rgb(13, 40, 81);
   --darkblue: rgb(15, 54, 113);
+  --orange: rgb(247, 172, 58);
+  --yellow: rgb(241, 210, 34);
 }
 html {
   scroll-behavior: smooth;
@@ -9,7 +11,6 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--light);
   line-height: 1.5;
   font-size: 62.5%;
   max-width: 100%;
@@ -26,28 +27,149 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.wrapper {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1rem;
+}
+main {
+  display: flex;
+  width: 85%;
+}
+main .left {
+  width: 70%;
+}
+main .right {
+  width: 30%;
+}
 * {
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
 }
 header {
   display: flex;
-  padding: 3%;
-  background-color: var(--header);
+  padding: 1% 3%;
+  background-color: var(--light);
 }
 .logo {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
-.logo img {
-  width: 80%;
+.logo .main {
+  width: 25vw;
+}
+.badge {
+  width: 8vw;
+  padding: 0 1%;
 }
 .filters {
-  width: 60%;
+  width: 50%;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2%;
 }
 .filters select {
+  width: 15vw;
+  height: 50%;
+  margin: 0 1.5%;
+  padding: 2%;
+  border-radius: 3px;
+}
+/* Status -==--=-=-==--==-=-=-=--=-==-=-=- */
+.status {
+  background-color: var(--light);
+  border-radius: 3px;
   margin: 2%;
-  padding: 3%;
+  display: flex;
+  height: fit-content;
+}
+.status .left {
+  width: 60%;
+  padding: 2% 3%;
+}
+.status .left h2 {
+  margin-top: 0;
+}
+.status .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 2%;
+}
+.status .right h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+.status .metrics {
+  color: var(--orange);
+  height: fit-content;
+}
+.status .metrics h3 {
+  margin: 0;
+  padding: 0 2%;
+}
+.doughnut {
+  width: 160px;
+  height: 160px;
+}
+/* Performance -==--=-=-==--==-=-=-=--=-==-=-=- */
+.performance {
+  background-color: var(--light);
+  border-radius: 3px;
+  margin: 2%;
+  display: flex;
+  height: fit-content;
+}
+.performance .left h2 {
+  margin-top: 0;
+}
+.performance .left {
+  width: 25%;
+  padding: 2% 3%;
+}
+.performance .metrics h3 {
+  margin: 0;
+  padding: 0 2%;
+  color: var(--orange);
+}
+.performance .right {
+  width: 75%;
+  /* padding: 2%; */
+}
+.bar-chart {
+  padding-right: 1%;
+  
+}
+/* Quarterly -==--=-=-==--==-=-=-=--=-==-=-=- */
+.quarterly {
+  background-color: var(--light);
+  border-radius: 3px;
+  margin: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 71.8vh;
+}
+.quarterly .period {
+  display: flex;
+  width: 75%;
+}
+.quarterly .period h3 {
+  width: 25%;
+  padding: 2%;
+  text-align: center;
+  color: var(--orange);
+}
+.quarterly .period .meters {
+  height: 25%;
 }

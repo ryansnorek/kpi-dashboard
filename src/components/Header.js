@@ -15,7 +15,8 @@ function Header() {
   return (
     <header>
       <div className="logo">
-        <img src="../logo.png" alt="banner-logo" />
+        <img className="main" src="../logo.png" alt="banner-logo" />
+        <img className="badge" src="../badge.png" alt="badge-logo" />
       </div>
       <div className="filters">
         <select name="spe" value={values.spe} onChange={handleChange}>
