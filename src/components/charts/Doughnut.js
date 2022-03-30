@@ -6,7 +6,7 @@ const data = {
   datasets: [
     {
       data: [80, 20],
-      backgroundColor: ["rgb(241, 210, 34)", "rgb(15, 54, 113)"],
+      backgroundColor: ["rgb(233, 204, 74)", "rgb(15, 54, 113)"],
       borderColor: "transparent",
     },
     

@@ -2,7 +2,7 @@
   --light: rgb(255, 255, 255);
   --darkerblue: rgb(13, 40, 81);
   --darkblue: rgb(15, 54, 113, .9);
-  --orange: rgb(233, 169, 74);
+  --gold: rgb(233, 204, 74);
   --yellow: rgb(241, 210, 34);
   --grey: rgb(218, 218, 218);
 }
@@ -21,8 +21,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Raleway", sans-serif;
   background-color: var(--darkerblue);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -36,8 +37,6 @@ code {
 h2 {
   font-size: 1.6rem;
   color: var(--darkblue);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
 }
 h3 {
   font-size: 1rem;
@@ -47,9 +46,24 @@ select {
   color: var(--darkblue);
   font-size: 1.2rem;
   outline-color: var(--darkblue);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+section {
+  border: 1px solid var(--gold);
+}
+button {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  color: rgb(15, 54, 113, .5);
 }
 button:hover {
   cursor: pointer;
+  color: var(--darkblue);
 }
 main {
   width: 100%;
@@ -107,8 +121,6 @@ header {
   margin: 0 1.5%;
   padding: 2%;
   border-radius: 9px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
 }
 /* Status -==--=-=-==--==-=-=-=--=-==-=-=- */
 .status {
@@ -136,17 +148,17 @@ header {
 .status .right h4 {
   margin: 0;
   font-size: 1rem;
+  color: var(--darkblue);
 }
 .status .metrics {
-  color: var(--orange);
+  color: var(--gold);
   height: fit-content;
 }
 .status .metrics h3 {
   margin: 0;
   padding: 0 2%;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .doughnut {
   width: 160px;
@@ -171,10 +183,9 @@ header {
 .performance .metrics h3 {
   margin: 6% 0;
   padding: 0 2%;
-  color: var(--orange);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  color: var(--gold);
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .performance .right {
   width: 75%;
@@ -187,15 +198,7 @@ header {
 }
 .performance .period button {
   margin: 0 1.5%;
-  border-radius: 5px;
   padding: 1.5% 3%;
-  color: var(--darkblue);
-  font-weight: bold;
-  border: none;
-  background-color: transparent;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
 }
 .bar-chart {
   padding-right: 5%;
@@ -219,18 +222,12 @@ header {
   padding: 2% 3%;
   font-size: 1rem;
   text-align: center;
-  color: var(--darkblue);
-  border-radius: 6px;
-  border: none;
-  font-weight: 500;
   margin: 3%;
-  background-color: transparent;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
 }
 #highlight {
   /* background-color: rgba(255, 244, 184, 0.7); */
   border: 1px solid var(--darkblue);
+  color: var(--darkblue);
 }
 .meter {
   width: 200px;
@@ -265,7 +262,7 @@ header {
   margin: .7% 2%;
 }
 .issues .header h4 {
-  color: var(--orange);
+  color: var(--gold);
   font-size: 0.8rem;
   margin: 3%;
 }

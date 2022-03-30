@@ -1,15 +1,18 @@
 import DoughnutChart from "./charts/Doughnut";
 
 function Status() {
+  const sites = 10;
+  const online = 9;
+  const offline = 1;
   return (
     <section className="status">
       <div className="left">
         <h2>Status</h2>
         <div className="metrics">
           <h3 className="uptime">Uptime: 2.4 years</h3>
-          <h3>Sites: 10</h3>
-          <h3>Online: 9</h3>
-          <h3>Offline: 1</h3>
+          <h3>Sites: {sites}</h3>
+          <h3>Online: {online}</h3>
+          <h3>Offline: {offline}</h3>
         </div>
       </div>
       <div className="right">

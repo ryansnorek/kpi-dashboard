@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { issues } from "../data";
 
 function Issues() {
+  const [issueType, setIssueType] = useState("open");
+  const handleClickType = (e) => setIssueType(e.target.name);
+  const toggleID = (name) => `${issueType === name && "highlight"}`;
+
   return (
     <section className="issues">
       <div className="header">
@@ -11,8 +16,12 @@ function Issues() {
         </div>
       </div>
       <div className="buttons">
-        <button>Open</button>
-        <button>Closed</button>
+        <button id={toggleID("open")} onClick={handleClickType} name="open">
+          Open
+        </button>
+        <button id={toggleID("closed")} onClick={handleClickType} name="closed">
+          Closed
+        </button>
       </div>
       <div className="grid">
         <h4>Name</h4>
@@ -23,18 +32,17 @@ function Issues() {
         <h4>Running Clock (days)</h4>
       </div>
       {issues.map((issue) => {
-            return (
-                <div className="grid-items">
-                    <p>{issue.name}</p>
-                    <p>{issue.type}</p>
-                    <p>{issue.priority}</p>
-                    <p>{issue.assigned_by}</p>
-                    <p>{issue.assigned_to}</p>
-                    <p>{issue.running_clock}</p>
-                </div>
-            )
-        })}
-     
+        return (
+          <div className="grid-items">
+            <p>{issue.name}</p>
+            <p>{issue.type}</p>
+            <p>{issue.priority}</p>
+            <p>{issue.assigned_by}</p>
+            <p>{issue.assigned_to}</p>
+            <p>{issue.running_clock}</p>
+          </div>
+        );
+      })}
     </section>
   );
 }
