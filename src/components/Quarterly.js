@@ -10,7 +10,7 @@ function Quarterly() {
         <h3>4Q22</h3>
       </div>
       <div className="meters">
-        <Meter meterValue={69} color={"grey"} />
+        <Meter meterValue={69} color={"rgb(218, 218, 218)"} />
         <Meter meterValue={80} color={"rgb(15, 54, 113)"} />
         <Meter meterValue={106} color={"rgb(241, 210, 34)"} />
       </div>
