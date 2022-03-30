@@ -144,6 +144,9 @@ header {
 .status .metrics h3 {
   margin: 0;
   padding: 0 2%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
 .doughnut {
   width: 160px;
@@ -169,6 +172,9 @@ header {
   margin: 6% 0;
   padding: 0 2%;
   color: var(--orange);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
 .performance .right {
   width: 75%;
@@ -183,10 +189,13 @@ header {
   margin: 0 1.5%;
   border-radius: 5px;
   padding: 1.5% 3%;
-  color: var(--orange);
+  color: var(--darkblue);
   font-weight: bold;
   border: none;
   background-color: transparent;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
 .bar-chart {
   padding-right: 5%;

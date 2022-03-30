@@ -1,17 +1,12 @@
 // import { useState } from "react";
 
+import { useState } from "react";
 import BarChart from "./charts/BarChart";
 
-// const initialValues = {
-//   period: "",
-// };
-
 function Performance() {
-//   const [values, setValues] = useState(initialValues);
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setValues({ ...values, [name]: value });
-//   };
+  const [period, setPeriod] = useState("quarter");
+const handleClickPeriod = (e) => setPeriod(e.target.name);
+const toggleID = (name) => `${period === name && "highlight"}`;
   return (
     <section className="performance">
       <div className="left">
@@ -23,11 +18,11 @@ function Performance() {
       </div>
       <div className="right">
         <div className="period">
-          <button>Day</button>
-          <button>Month</button>
-          <button>Quarter</button>
-          <button>Year</button>
-          <button>All-time</button>
+          <button id={toggleID("day")} onClick={handleClickPeriod} name="day">Day</button>
+          <button id={toggleID("month")} onClick={handleClickPeriod} name="month">Month</button>
+          <button id={toggleID("quarter")} onClick={handleClickPeriod} name="quarter">Quarter</button>
+          <button id={toggleID("year")} onClick={handleClickPeriod} name="year">Year</button>
+          <button id={toggleID("all")} onClick={handleClickPeriod} name="all">All-time</button>
         </div>
           <BarChart />
       </div>
