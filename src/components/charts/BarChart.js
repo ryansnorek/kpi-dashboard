@@ -14,19 +14,19 @@ const data = {
   datasets: [
     {
       label: "Estimated",
-      data: [65, 59, 80, 81],
-      backgroundColor: "rgb(218, 218, 218, .6)",
+      data: [650, 590, 800, 810],
+      backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1
     },
     {
       label: "Guaranteed",
-      data: [55, 50, 67, 76],
+      data: [550, 500, 670, 760],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1
     },
     {
       label: "Predicted",
-      data: [50, 45, 68, 76],
+      data: [500, 450, 680, 760],
       backgroundColor: "rgb(241, 210, 34)",
       tension: 0.1
     },

@@ -23,9 +23,13 @@ function Performance() {
       </div>
       <div className="right">
         <div className="period">
-          <h4>period select</h4>
-          <BarChart />
+          <button>Day</button>
+          <button>Month</button>
+          <button>Quarter</button>
+          <button>Year</button>
+          <button>All-time</button>
         </div>
+          <BarChart />
       </div>
     </section>
   );
