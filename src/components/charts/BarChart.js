@@ -15,11 +15,27 @@ const dayData = {
   labels: ["6", "12", "18", "24"],
   datasets: [
     {
-      label: "Today",
+      label: "Predicted",
       data: [65, 59, 80, 81],
       fill: true,
       borderColor: "rgb(233, 204, 74)",
       backgroundColor: "rgb(233, 204, 74, .5)",
+      tension: 0.1,
+    },
+    {
+      label: "Guaranteed",
+      data: [40, 38, 51, 49],
+      fill: true,
+      borderColor: "rgb(15, 54, 113)",
+      backgroundColor: "rgb(15, 54, 113, .5)",
+      tension: 0.1,
+    },
+    {
+      label: "Estimated",
+      data: [52, 42, 58, 70],
+      fill: true,
+      borderColor: "rgb(12, 12, 12)",
+      backgroundColor: "rgb(218, 218, 218, .5)",
       tension: 0.1,
     },
   ],
