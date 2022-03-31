@@ -8,10 +8,10 @@ function getCurrentDate() {
 
 function getCurrentQuarter(month) {
   let currentQuarter;
-  if (month < 4) currentQuarter = "1";
-  else if (month < 7) currentQuarter = "2"
-  else if (month < 10) currentQuarter = "3";
-  else currentQuarter = "4";
+  if (month < 4) currentQuarter = 1;
+  else if (month < 7) currentQuarter = 2;
+  else if (month < 10) currentQuarter = 3;
+  else currentQuarter = 4;
   return currentQuarter;
 }
 
