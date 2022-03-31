@@ -16,7 +16,7 @@ const dayData = {
   datasets: [
     {
       label: "Prod/Estimated%",
-      data: [52, 42, 58, 70],
+      data: [72, 62, 78, 80],
       fill: true,
       borderColor: "rgb(218, 218, 218)",
       backgroundColor: "rgb(218, 218, 218, .5)",
@@ -24,7 +24,7 @@ const dayData = {
     },
     {
       label: "Prod/Predicted%",
-      data: [65, 59, 80, 81],
+      data: [85, 79, 90, 91],
       fill: true,
       borderColor: "rgb(233, 204, 74)",
       backgroundColor: "rgb(233, 204, 74, .5)",
@@ -32,7 +32,7 @@ const dayData = {
     },
     {
       label: "Prod/Guaranteed%",
-      data: [40, 38, 51, 49],
+      data: [110, 98, 102, 99],
       fill: true,
       borderColor: "rgb(15, 54, 113)",
       backgroundColor: "rgb(15, 54, 113, .5)",
