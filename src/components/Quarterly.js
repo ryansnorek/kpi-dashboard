@@ -30,11 +30,33 @@ function Quarterly() {
         </button>
       </div>
       <div className="meters">
-        <Meter title="Estimated" meterValue={69} color={"rgb(218, 218, 218)"} />
-        <Meter title="Guaranteed" meterValue={80} color={"rgb(15, 54, 113)"} />
-        <Meter title="Predicted" meterValue={106} color={"rgb(233, 204, 74)"} />
+        <Meter
+          title="Estimated"
+          meterValue={data[quarter][0]}
+          color={"rgb(218, 218, 218)"}
+          quarter={quarter}
+        />
+        <Meter
+          title="Guaranteed"
+          meterValue={data[quarter][1]}
+          color={"rgb(15, 54, 113)"}
+          quarter={quarter}
+        />
+        <Meter
+          title="Predicted"
+          meterValue={data[quarter][2]}
+          color={"rgb(233, 204, 74)"}
+          quarter={quarter}
+        />
       </div>
     </section>
   );
 }
 export default Quarterly;
+
+const data = {
+  1: [69, 80, 106],
+  2: [55, 67, 98],
+  3: [89, 88, 99],
+  4: [76, 43, 55]
+}

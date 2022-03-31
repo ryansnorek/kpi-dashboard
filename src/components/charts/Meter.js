@@ -1,6 +1,7 @@
 import ReactSpeedometer from "react-d3-speedometer";
 
 function Meter({ title, meterValue, color }) {
+
   return (
     <div className="meter">
       <ReactSpeedometer
