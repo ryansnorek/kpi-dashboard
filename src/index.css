@@ -212,7 +212,7 @@ header {
 .quarterly {
   background-color: var(--light);
   border-radius: 9px;
-  margin: 4%;
+  margin: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
