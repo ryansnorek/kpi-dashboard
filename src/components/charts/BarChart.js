@@ -48,18 +48,21 @@ const monthData = {
       data: [350, 290, 100, 710],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
+      maxBarThickness: 20
     },
     {
       label: "Guaranteed",
       data: [350, 400, 570, 660],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
+      maxBarThickness: 20
     },
     {
       label: "Predicted",
       data: [400, 350, 580, 660],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
+      maxBarThickness: 20
     },
   ],
 };
@@ -71,18 +74,21 @@ const quarterData = {
       data: [650, 590, 800],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
+      maxBarThickness: 30
     },
     {
       label: "%Produced/Guaranteed",
       data: [550, 500, 670],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
+      maxBarThickness: 30
     },
     {
       label: "%Produced/Predicted",
       data: [500, 450, 680],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
+      maxBarThickness: 30
     },
   ],
 };
@@ -107,18 +113,21 @@ const yearData = {
       data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
+      maxBarThickness: 6
     },
     {
       label: "Guaranteed",
       data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
+      maxBarThickness: 6
     },
     {
       label: "Predicted",
       data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
+      maxBarThickness: 6
     },
   ],
 };
