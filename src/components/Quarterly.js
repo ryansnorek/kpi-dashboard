@@ -3,27 +3,25 @@ import { getQuarterlyPeriods } from "../helper";
 import { useState } from "react";
 
 function Quarterly() {
-  const [currentQuarter, currentYear, lastYear] = getQuarterlyPeriods();
+  const [currentQuarter, labels] = getQuarterlyPeriods();
   const [quarter, setQuarter] = useState(currentQuarter);
   const qtrID = (qtr) => `${quarter === qtr && "highlight"}`;
   const handleClickQtr = (e) => setQuarter(e.target.name);
-
-  console.log(currentYear, lastYear)
 
   return (
     <section className="quarterly">
       <div className="period">
         <button id={qtrID("1")} name="1" onClick={handleClickQtr}>
-          1Q22
+          {labels[0]}
         </button>
         <button id={qtrID("2")} name="2" onClick={handleClickQtr}>
-          2Q22
+          {labels[1]}
         </button>
         <button id={qtrID("3")} name="3" onClick={handleClickQtr}>
-          3Q22
+          {labels[2]}
         </button>
         <button id={qtrID("4")} name="4" onClick={handleClickQtr}>
-          4Q22
+          {labels[3]}
         </button>
       </div>
       <div className="meters">
