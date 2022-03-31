@@ -15,7 +15,7 @@ function Meter({ title, meterValue, color }) {
         needleHeightRatio={.85}
         ringWidth={30}
         labelFontSize=".6rem"
-        currentValueText={`${title}/Produced: ${meterValue}%`}
+        currentValueText={`Produced/${title}: ${meterValue}%`}
         textColor="rgb(15, 54, 113)"
         valueTextFontSize=".8rem"
         segmentColors={[color]}

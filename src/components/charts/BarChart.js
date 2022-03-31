@@ -67,19 +67,19 @@ const quarterData = {
   labels: ["Jan", "Feb", "Mar"],
   datasets: [
     {
-      label: "Estimated",
+      label: "%Produced/Estimated",
       data: [650, 590, 800],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
     },
     {
-      label: "Guaranteed",
+      label: "%Produced/Guaranteed",
       data: [550, 500, 670],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
     },
     {
-      label: "Predicted",
+      label: "%Produced/Predicted",
       data: [500, 450, 680],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
