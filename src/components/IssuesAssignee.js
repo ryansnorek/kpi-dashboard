@@ -14,6 +14,10 @@ function Issues() {
   const [issueType, setIssueType] = useState("open");
   const handleClickType = (e) => setIssueType(e.target.name);
   const toggleID = (name) => `${issueType === name && "highlight"}`;
+
+  const openIssues = 3;
+  const resolutionTime = 8.9;
+
   return (
     <section className="issues">
       <div className="header">
@@ -21,8 +25,14 @@ function Issues() {
           <option value={0}>Jarin</option>
         </select>
         <div className="right">
-          <h4>Open Issues: 1</h4>
-          <h4>Ave. Resolution Time: 7 days</h4>
+        <div className="metric">
+            <h4>Open Issues: </h4>
+            <h4 id="dark">{openIssues}</h4>
+          </div>
+          <div className="metric">
+            <h4>Ave. Resolution Time: </h4>
+            <h4 id="dark">{resolutionTime} days</h4>
+          </div>
         </div>
       </div>
       <div className="buttons">

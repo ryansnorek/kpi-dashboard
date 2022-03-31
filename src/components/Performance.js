@@ -7,13 +7,21 @@ function Performance() {
   const [period, setPeriod] = useState("quarter");
   const handleClickPeriod = (e) => setPeriod(e.target.name);
   const toggleID = (name) => `${period === name && "highlight"}`;
+  const produced = 324254;
+  const value = 9341;
   return (
     <section className="performance">
       <div className="left">
         <h2>Performance</h2>
         <div className="metrics">
-          <h3>Energy Produced: 324,254 kWh</h3>
-          <h3>Energy Value: $9,341</h3>
+          <div className="metric">
+            <h3>Produced: </h3>
+            <h3 id="dark">{produced.toLocaleString()} kWh</h3>
+          </div>
+          <div className="metric">
+            <h3>Value: </h3>
+            <h3 id="dark">${value.toLocaleString()}</h3>
+          </div>
         </div>
       </div>
       <div className="right">
@@ -42,7 +50,7 @@ function Performance() {
             All-time
           </button>
         </div>
-        <BarChart period={period}/>
+        <BarChart period={period} />
       </div>
     </section>
   );

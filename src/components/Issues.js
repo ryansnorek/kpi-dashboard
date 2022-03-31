@@ -6,13 +6,21 @@ function Issues() {
   const handleClickType = (e) => setIssueType(e.target.name);
   const toggleID = (name) => `${issueType === name && "highlight"}`;
 
+  const openIssues = 1;
+  const resolutionTime = 4.2;
   return (
     <section className="issues">
       <div className="header">
         <h2>Issues</h2>
         <div className="right">
-          <h4>Open Issues: 1</h4>
-          <h4>Ave. Resolution Time: 7 days</h4>
+          <div className="metric">
+            <h4>Open Issues: </h4>
+            <h4 id="dark">{openIssues}</h4>
+          </div>
+          <div className="metric">
+            <h4>Ave. Resolution Time: </h4>
+            <h4 id="dark">{resolutionTime} days</h4>
+          </div>
         </div>
       </div>
       <div className="buttons">

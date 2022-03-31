@@ -169,6 +169,9 @@ header {
   width: 160px;
   height: 160px;
 }
+.metric {
+  display: flex;
+}
 /* Performance -==--=-=-==--==-=-=-=--=-==-=-=- */
 .performance {
   background-color: var(--light);
@@ -189,8 +192,14 @@ header {
   margin: 6% 0;
   padding: 0 2%;
   color: var(--gold);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: bold;
+}
+.performance .metric {
+  flex-direction: column;
+}
+.performance .metric #dark {
+  margin: 0;
 }
 .performance .right {
   width: 75%;
@@ -263,6 +272,11 @@ header {
   align-items: center;
   width: 42%;
 }
+.right .metric {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .issues .header h2 {
   margin: .7% 2%;
 }
@@ -307,4 +321,9 @@ header {
   margin: 1.5%;
   padding: 1.5%;
   border-radius: 9px;
+}
+
+/* Global -==--==-=-=--=-= */
+#dark {
+  color: var(--darkblue);
 }
