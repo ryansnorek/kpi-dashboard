@@ -45,21 +45,21 @@ const monthData = {
   datasets: [
     {
       label: "Prod/Estimated%",
-      data: [350, 290, 100, 710],
+      data: [90, 92, 103, 87],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
       maxBarThickness: 20,
     },
     {
       label: "Prod/Guaranteed%",
-      data: [350, 400, 570, 660],
+      data: [100, 103, 99, 110],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
       maxBarThickness: 20
     },
     {
       label: "Prod/Predicted%",
-      data: [400, 350, 580, 660],
+      data: [104, 97, 88, 99],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
       maxBarThickness: 20
@@ -71,21 +71,21 @@ const quarterData = {
   datasets: [
     {
       label: "Prod/Estimated%",
-      data: [650, 590, 800],
+      data: [110, 92, 88],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
       maxBarThickness: 30
     },
     {
       label: "Prod/Guaranteed%",
-      data: [550, 500, 670],
+      data: [98, 89, 103],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
       maxBarThickness: 30
     },
     {
       label: "Prod/Predicted%",
-      data: [500, 450, 680],
+      data: [111, 98, 87],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
       maxBarThickness: 30
@@ -110,21 +110,21 @@ const yearData = {
   datasets: [
     {
       label: "Prod/Estimated%",
-      data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
+      data: [83, 82, 92, 84, 88, 98, 103, 112, 120, 109, 92, 84],
       backgroundColor: "rgb(218, 218, 218)",
       tension: 0.1,
       maxBarThickness: 6
     },
     {
       label: "Prod/Guaranteed%",
-      data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
+      data: [103, 97, 92, 99, 100, 113, 103, 112, 120, 109, 92, 84],
       backgroundColor: "rgb(15, 54, 113)",
       tension: 0.1,
       maxBarThickness: 6
     },
     {
       label: "Prod/Predicted%",
-      data: [883, 942, 712, 888, 1300, 1600, 1748, 2093, 1854, 1423, 1002, 932],
+      data: [108, 100, 92, 84, 88, 88, 114, 99, 94, 102, 92, 84],
       backgroundColor: "rgb(233, 204, 74)",
       tension: 0.1,
       maxBarThickness: 6
