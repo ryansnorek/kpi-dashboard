@@ -40,6 +40,31 @@ export const spe = [
   "AOAO Pearl Horizons",
   "Redstone",
 ];
+export const tags = [
+  "CyanoPV",
+  "OwensPV",
+  "TakiPV",
+  "S&F Building, LLC",
+  "Kula AG-FIT",
+  "T10PV",
+  "T13",
+  "T15",
+  "T18",
+  "T20",
+  "Notre Dame PV",
+  "Hilo Hotel PV",
+  "PR Outlet PV",
+  "Wyndham",
+  "Mission Valley PV",
+  "Zurn",
+  "PGE",
+  "Green Bridge",
+  "Kawela Deep Well 1",
+  "CCND",
+  "Glory Nani Mau",
+  "AOAO Pearl Horizons",
+  "Redstone",
+];
 export const issues = [
   {
     name: "Install new panel",

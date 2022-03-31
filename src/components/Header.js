@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { spe } from "../data";
+import { spe, tags } from "../data";
 
 const initialValues = {
   spe: "",
@@ -29,8 +29,8 @@ function Header() {
         </select>
         <select id="tag" name="tag" value={values.tag} onChange={handleChange}>
           <option value={0}>Tag</option>
-          {spe.map((site) => {
-            return <option value={site}>{site}</option>;
+          {tags.map((tag) => {
+            return <option value={tag}>{tag}</option>;
           })}
         </select>
       </div>
