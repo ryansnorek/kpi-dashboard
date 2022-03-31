@@ -6,7 +6,7 @@ function Issues() {
   const handleClickType = (e) => setIssueType(e.target.name);
   const toggleID = (name) => `${issueType === name && "highlight"}`;
 
-  const openIssues = 1;
+  const openIssues = issues.length;
   const resolutionTime = 4.2;
   return (
     <section className="issues">

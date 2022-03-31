@@ -15,7 +15,7 @@ function Issues() {
   const handleClickType = (e) => setIssueType(e.target.name);
   const toggleID = (name) => `${issueType === name && "highlight"}`;
 
-  const openIssues = 3;
+  const openIssues = issues.length;
   const resolutionTime = 8.9;
 
   return (
