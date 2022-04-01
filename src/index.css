@@ -142,7 +142,7 @@ header {
   border-radius: 9px;
   margin: 2%;
   display: flex;
-  height: 28vh;
+  height: 30vh;
 }
 .status .left {
   width: 60%;
@@ -234,7 +234,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 75.5vh;
+  height: 77.5vh;
 }
 .quarterly .period {
   display: flex;
