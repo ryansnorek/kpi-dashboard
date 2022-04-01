@@ -353,7 +353,7 @@ header {
 #dark {
   color: var(--darkblue);
 }
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
   h2 {
     font-size: 3rem;
     margin-bottom: 1%;
@@ -411,74 +411,124 @@ header {
   .bottom {
     width: 70%;
   }
-}
-@media (max-width: 1640px) {
+} */
+/* @media (max-width: 1920px) {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+  .status .metric h3 {
+    font-size: 1.3rem;
+  }
+  .top {
+    width: 75%;
+  }
   .status {
-    height: 22vh;
+    height: 24vh;
+  }
+  .doughnut {
+    width: 200px;
+    height: 200px;
   }
   .performance {
-    height: 37vh;
+    height: 38vh;
   }
-  .quarterly {
-    height: 61vh;
-  }
-  .issues {
-    height: 33vh;
-  }
-}
-@media (max-width: 1440px) {
-  .status {
-    height: 26vh;
-  }
-  .performance {
-    height: 36vh;
+  .performance .metric h3 {
+    font-size: 1.6rem;
   }
   .quarterly {
     height: 64vh;
   }
-  .issues {
-    height: 36vh;
+  .quarterly .period button {
+    font-size: 1.2rem;
   }
-}
-@media (max-width: 1300px) {
-  .status {
-    height: 27vh;
+  .performance .period button {
+    font-size: 1rem;
   }
-  .performance {
-    height: 37vh;
-  }
-  .quarterly {
-    height: 66vh;
+  svg {
+    width: 300px;
+    height: 250px;
+    margin: 0;
   }
   .issues {
-    height: 38vh;
+    height: 35vh;
   }
-}
-@media (max-width: 1245px) {
+  .issues .header .right {
+    width: 50%;
+  }
+  .issues .metric h4{
+    font-size: 1.2rem;
+  }
+  .issues .buttons {
+    padding: 1%;
+  } 
+  .issues .buttons button {
+    font-size: 1.2rem;
+  }
+  .issues select {
+    font-size: 2rem;
+  }
+  .bottom {
+    width: 75%;
+  }
+} */
+/* @media (max-width: 1600px) {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+  .status .metric h3 {
+    font-size: 1.3rem;
+  }
+  .top {
+    width: 80%;
+  }
   .status {
-    height: 23vh;
+    height: 22vh;
+  }
+  .doughnut {
+    width: 180px;
+    height: 180px;
   }
   .performance {
-    height: 29vh;
+    height: 30vh;
+  }
+  .performance .metric h3 {
+    font-size: 1.4rem;
   }
   .quarterly {
     height: 53.5vh;
   }
+  .quarterly .period button {
+    font-size: 1.1rem;
+  }
+  .performance .period button {
+    font-size: .8rem;
+  }
+  svg {
+    width: 300px;
+    height: 250px;
+    margin: 0;
+  }
   .issues {
     height: 30vh;
   }
-}
-@media (max-width: 1244px) {
-  .status {
-    height: 27vh;
+  .issues .header .right {
+    width: 50%;
   }
-  .performance {
-    height: 37vh;
+  .issues .metric h4{
+    font-size: 1rem;
   }
-  .quarterly {
-    height: 66vh;
+  .issues .buttons {
+    padding: 1%;
+  } 
+  .issues .buttons button {
+    font-size: 1rem;
   }
-  .issues {
-    height: 38vh;
+  .issues select {
+    font-size: 2rem;
   }
-}
+  .bottom {
+    width: 80%;
+  }
+} */
