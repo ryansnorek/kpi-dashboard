@@ -396,3 +396,17 @@ header {
     height: 30vh;
   }
 }
+@media (max-width: 1244px) {
+  .status {
+    height: 27vh;
+  }
+  .performance {
+    height: 37vh;
+  }
+  .quarterly {
+    height: 66vh;
+  }
+  .issues {
+    height: 38vh;
+  }
+}
