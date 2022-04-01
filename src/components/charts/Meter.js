@@ -13,7 +13,7 @@ function Meter({ title, meterValue, color }) {
         needleTransitionDuration={1000}
         needleColor="black"
         needleHeightRatio={.85}
-        ringWidth={30}
+        ringWidth={20}
         labelFontSize=".6rem"
         currentValueText={`Produced/${title}: ${meterValue}%`}
         textColor="rgb(15, 54, 113)"
