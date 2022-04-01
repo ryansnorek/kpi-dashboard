@@ -42,10 +42,12 @@ code {
   transition: 0.3s ease-in;
 }
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: var(--darkblue);
 }
-
+h3 {
+  font-size: 1rem;
+}
 .tag,
 .spe {
   border: 1px solid var(--darkblue);
