@@ -6,7 +6,6 @@ function Meter({ title, meterValue, color }) {
     <div className="meter">
       <ReactSpeedometer
         value={meterValue}
-        height={100}
         segments={6}
         fluidWidth={true}
         minValue={0}
