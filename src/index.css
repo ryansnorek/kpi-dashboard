@@ -353,7 +353,79 @@ header {
 #dark {
   color: var(--darkblue);
 }
-
+@media (max-width: 2560px) {
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1%;
+  }
+  .status .metric h3 {
+    font-size: 1.6rem;
+  }
+  .top {
+    width: 70%;
+  }
+  .status {
+    height: 22vh;
+  }
+  .doughnut {
+    width: 220px;
+    height: 220px;
+  }
+  .performance {
+    height: 35vh;
+  }
+  .performance .metric h3 {
+    font-size: 2rem;
+  }
+  .quarterly {
+    height: 59vh;
+  }
+  .quarterly .period button {
+    font-size: 1.6rem;
+  }
+  .performance .period button {
+    font-size: 1.3rem;
+  }
+  .meter {
+    width: 400px;
+    height: 250px;
+  }
+  .issues {
+    height: 33vh;
+  }
+  .issues .header .right {
+    width: 50%;
+  }
+  .issues .metric h4{
+    font-size: 1.6rem;
+  }
+  .issues .buttons {
+    padding: 1%;
+  } 
+  .issues .buttons button {
+    font-size: 1.6rem;
+  }
+  .issues select {
+    font-size: 2rem;
+  }
+  .bottom {
+    width: 70%;
+  }
+}
+@media (max-width: 1640px) {
+  .status {
+    height: 22vh;
+  }
+  .performance {
+    height: 37vh;
+  }
+  .quarterly {
+    height: 61vh;
+  }
+  .issues {
+    height: 33vh;
+  }
+}
 @media (max-width: 1440px) {
   .status {
     height: 26vh;
