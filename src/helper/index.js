@@ -26,17 +26,17 @@ export function getQuarterlyPeriods() {
   let q3 = "3Q";
   let q4 = "4Q";
 
-  if (currentQuarter < 4) {
+  if (month < 4) {
     q1 += lastYear;
     q2 += lastYear;
     q3 += lastYear;
     q4 += lastYear;
-  } else if (currentQuarter < 7) {
+  } else if (month < 7) {
     q1 += currentYear;
     q2 += lastYear;
     q3 += lastYear;
     q4 += lastYear;
-  } else if (currentQuarter < 10) {
+  } else if (month < 10) {
     q1 += currentYear;
     q2 += currentYear;
     q3 += lastYear;
