@@ -1,7 +1,7 @@
 :root {
   --light: rgb(255, 255, 255);
   --darkerblue: rgb(13, 40, 81);
-  --darkblue: rgb(15, 54, 113, .9);
+  --darkblue: rgb(15, 54, 113, 0.9);
   --gold: rgb(233, 204, 74);
   --yellow: rgb(241, 210, 34);
   --grey: rgb(218, 218, 218);
@@ -22,15 +22,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--darkerblue);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .wrapper {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
@@ -48,25 +48,26 @@ h2 {
 h3 {
   font-size: 1rem;
 }
-.tag, .spe {
+.tag,
+.spe {
   border: 1px solid var(--darkblue);
   color: var(--darkblue);
   font-size: 1.2rem;
   outline-color: var(--darkblue);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 section {
   border: 1px solid var(--gold);
 }
 button {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: transparent;
   border: none;
   border-radius: 6px;
   font-weight: 500;
-  color: rgb(15, 54, 113, .5);
+  color: rgb(15, 54, 113, 0.5);
 }
 button:hover {
   cursor: pointer;
@@ -286,7 +287,7 @@ header {
   width: 100%;
 }
 .issues .header h2 {
-  margin: .7% 2%;
+  margin: 0.7% 2%;
 }
 .issues .header h4 {
   color: var(--gold);
@@ -320,7 +321,7 @@ header {
 .grid-items p {
   margin: 0;
   border-bottom: 1px solid var(--grey);
-  height: 20px; 
+  height: 20px;
 }
 .issues .header select {
   padding: 1%;
@@ -335,11 +336,11 @@ header {
   height: 6vh;
 }
 .scrolled-main {
-  transform: scale(.8) translateX(20%);
+  transform: scale(0.8) translateX(20%);
   transition: 0.2s ease-in;
 }
 .scrolled-badge {
-  transform: scale(.5);
+  transform: scale(0.5);
   transition: 0.2s ease-in-out;
 }
 .scrolled-landing {
@@ -351,4 +352,19 @@ header {
 /* Global -==--==-=-=--=-= */
 #dark {
   color: var(--darkblue);
+}
+
+@media (max-width: 1440px) {
+  .status {
+    height: 26vh;
+  }
+  .performance {
+    height: 36vh;
+  }
+  .quarterly {
+    height: 64vh;
+  }
+  .issues {
+    height: 36vh;
+  }
 }
