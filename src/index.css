@@ -378,8 +378,8 @@ header {
     height: 22vh;
   }
   .doughnut {
-    width: 220px;
-    height: 220px;
+    width: 320px;
+    height: 320px;
   }
   .performance {
     height: 35vh;
@@ -397,7 +397,6 @@ header {
     height: 59vh;
   }
   .meter {
-    padding: 2% 0;
     /* width: 0%; */
     /* height: 50vh; */
   }
@@ -458,9 +457,8 @@ header {
     height: 64vh;
   }
   .meter {
-    padding: 2% 0;
     width: 70%;
-    height: 15vh;
+    height: 12vh;
   }
   .quarterly .period button {
     font-size: 1.2rem;
@@ -490,6 +488,12 @@ header {
     width: 75%;
   }
 }
+/* @media (min-height: 1080px) {
+  .meter {
+    width: 70%;
+    height: 10vh;
+  }
+} */
 @media (min-width: 1600px) {
   h2 {
     font-size: 2rem;
