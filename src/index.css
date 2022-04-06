@@ -426,6 +426,9 @@ header {
   border-radius: 0;
   padding: 5%;
 }
+#login button:hover {
+  opacity: .9;
+}
 @keyframes drop-fade-in {
   0% {
     transform: translateY(-20px);
