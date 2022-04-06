@@ -7,7 +7,7 @@ const initialValues = {
 };
 
 function Issues() {
-  const [value, handleChange] = useForm(initialValues);
+  const [values, handleChange] = useForm(initialValues);
 
   const [handleClickTarget, toggleID] = useHighlight("open");
 
@@ -17,7 +17,7 @@ function Issues() {
   return (
     <section className="issues">
       <div className="header">
-        <select name="assignee" value={value.assignee} onChange={handleChange}>
+        <select name="assignee" value={values.assignee} onChange={handleChange}>
           <option value={0}>Jarin</option>
         </select>
         <div className="right">

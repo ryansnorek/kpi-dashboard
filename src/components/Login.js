@@ -6,7 +6,7 @@ const initialValue = {
 };
 
 function Login({ setLoggedIn }) {
-  const [value, handleChange] = useForm(initialValue);
+  const [values, handleChange] = useForm(initialValue);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function Login({ setLoggedIn }) {
             type="text"
             name="username"
             required
-            value={value.username}
+            value={values.username}
             placeholder="Username"
             onChange={handleChange}
           />
@@ -29,7 +29,7 @@ function Login({ setLoggedIn }) {
             type="password"
             name="password"
             required
-            value={value.password}
+            value={values.password}
             placeholder="Password"
             onChange={handleChange}
           />

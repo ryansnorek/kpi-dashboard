@@ -60,3 +60,8 @@ export const handleScrollEffect = (setScrollBreakPoint) => {
     setScrollBreakPoint(false);
   }
 };
+
+export const getQuarterNumber = (currentQuarter) => {
+  if (currentQuarter === 1) return 4;
+  return currentQuarter - 1;
+};
