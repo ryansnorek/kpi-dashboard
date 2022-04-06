@@ -1,45 +1,61 @@
-import { getQuarterlyPeriods } from "../helper";
-
 import Meter from "./charts/Meter";
+import { getQuarterlyPeriods } from "../helper";
+import { useState } from "react";
 import useHighlight from "../hooks/useHighlight";
 
 function Quarterly() {
   const [currentQuarter, labels] = getQuarterlyPeriods();
-  const setQuarter = () => currentQuarter === 1 ? 4 : -1;
 
-  const [handleClickTarget, toggleID, targetType] = useHighlight(setQuarter(), "qtr");
+  // const [handleClickTarget, toggleID, targetType] = useHighlight(() => {
+  //   if (currentQuarter === 1) {
+  //     return 4;
+  //   }
+  //   return currentQuarter - 1;
+  // });
+
+  const [quarter, setQuarter] = useState(() => {
+    if (currentQuarter === 1) {
+      return 4;
+    }
+    return currentQuarter - 1;
+  });
+  const qtrID = (qtr) => `${quarter === qtr && "highlight"}`;
+  const handleClickQtr = (e) => setQuarter(Number(e.target.name));
 
   return (
     <section className="quarterly">
       <div className="period">
-        <button id={toggleID(1)} name={1} onClick={handleClickTarget}>
+        <button id={qtrID(1)} name={1} onClick={handleClickQtr}>
           {labels[0]}
         </button>
-        <button id={toggleID(2)} name={2} onClick={handleClickTarget}>
+        <button id={qtrID(2)} name={2} onClick={handleClickQtr}>
           {labels[1]}
         </button>
-        <button id={toggleID(3)} name={3} onClick={handleClickTarget}>
+        <button id={qtrID(3)} name={3} onClick={handleClickQtr}>
           {labels[2]}
         </button>
-        <button id={toggleID(4)} name={4} onClick={handleClickTarget}>
+        <button id={qtrID(4)} name={4} onClick={handleClickQtr}>
           {labels[3]}
         </button>
       </div>
       <div className="meters">
         <Meter
           title="Estimated"
-          meterValue={data[targetType][0]}
+          meterValue={data[quarter][0]}
           color={"rgb(218, 218, 218)"}
+          quarter={quarter}
         />
         <Meter
           title="Guaranteed"
-          meterValue={data[targetType][1]}
+          meterValue={data[quarter][1]}
           color={"rgb(15, 54, 113)"}
+          quarter={quarter}
         />
         <Meter
           title="Predicted"
-          meterValue={data[targetType][2]}
+          meterValue={data[quarter][2]}
           color={"rgb(233, 204, 74)"}
+          quarter={quarter}
         />
       </div>
     </section>
