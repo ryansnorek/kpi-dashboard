@@ -1,19 +1,15 @@
-import { useState } from "react";
 import { issues } from "../data";
+import useForm from "../hooks/useForm";
+import useHighlight from "../hooks/useHighlight";
 
 const initialValues = {
   assignee: "",
 };
 
 function Issues() {
-  const [values, setValues] = useState(initialValues);
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setValues({ ...values, [name]: value });
-  };
-  const [issueType, setIssueType] = useState("open");
-  const handleClickType = (e) => setIssueType(e.target.name);
-  const toggleID = (name) => `${issueType === name && "highlight"}`;
+  const [value, handleChange] = useForm(initialValues);
+
+  const [handleClickTarget, toggleID] = useHighlight("open");
 
   const openIssues = issues.length;
   const resolutionTime = 8.9;
@@ -21,7 +17,7 @@ function Issues() {
   return (
     <section className="issues">
       <div className="header">
-        <select name="assignee" value={values.assignee} onChange={handleChange}>
+        <select name="assignee" value={value.assignee} onChange={handleChange}>
           <option value={0}>Jarin</option>
         </select>
         <div className="right">
@@ -36,10 +32,10 @@ function Issues() {
         </div>
       </div>
       <div className="buttons">
-        <button id={toggleID("open")} onClick={handleClickType} name="open">
+        <button id={toggleID("open")} onClick={handleClickTarget} name="open">
           Open
         </button>
-        <button id={toggleID("closed")} onClick={handleClickType} name="closed">
+        <button id={toggleID("closed")} onClick={handleClickTarget} name="closed">
           Closed
         </button>
       </div>

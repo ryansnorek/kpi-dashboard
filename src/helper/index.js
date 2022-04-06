@@ -51,3 +51,12 @@ export function getQuarterlyPeriods() {
 
   return [currentQuarter, labels];
 }
+
+export const handleScrollEffect = (setScrollBreakPoint) => {
+  const element = document.querySelector(".wrapper");
+  if (element.scrollTop > 60) {
+    setScrollBreakPoint(true);
+  } else {
+    setScrollBreakPoint(false);
+  }
+};

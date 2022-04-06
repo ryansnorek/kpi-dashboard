@@ -1,14 +1,12 @@
-// import { useState } from "react";
-
-import { useState } from "react";
+import useHighlight from "../hooks/useHighlight";
 import BarChart from "./charts/BarChart";
 
 function Performance() {
-  const [period, setPeriod] = useState("quarter");
-  const handleClickPeriod = (e) => setPeriod(e.target.name);
-  const toggleID = (name) => `${period === name && "highlight"}`;
+  const [handleClickTarget, toggleID, targetType] = useHighlight("quarter");
+
   const produced = 324254;
   const value = 9341;
+
   return (
     <section className="performance">
       <div className="left">
@@ -26,31 +24,31 @@ function Performance() {
       </div>
       <div className="right">
         <div className="period">
-          <button id={toggleID("day")} onClick={handleClickPeriod} name="day">
+          <button id={toggleID("day")} onClick={handleClickTarget} name="day">
             Day
           </button>
           <button
             id={toggleID("month")}
-            onClick={handleClickPeriod}
+            onClick={handleClickTarget}
             name="month"
           >
             Month
           </button>
           <button
             id={toggleID("quarter")}
-            onClick={handleClickPeriod}
+            onClick={handleClickTarget}
             name="quarter"
           >
             Quarter
           </button>
-          <button id={toggleID("year")} onClick={handleClickPeriod} name="year">
+          <button id={toggleID("year")} onClick={handleClickTarget} name="year">
             Year
           </button>
-          <button id={toggleID("all")} onClick={handleClickPeriod} name="all">
+          <button id={toggleID("all")} onClick={handleClickTarget} name="all">
             All-time
           </button>
         </div>
-        <BarChart period={period} />
+        <BarChart period={targetType} />
       </div>
     </section>
   );

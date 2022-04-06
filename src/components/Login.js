@@ -1,4 +1,4 @@
-import { useState } from "react";
+import useForm from "../hooks/useForm";
 
 const initialValue = {
   username: "",
@@ -6,25 +6,16 @@ const initialValue = {
 };
 
 function Login({ setLoggedIn }) {
-  const [value, setValue] = useState(initialValue);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setValue({ ...value, [name]: value });
-  };
+  const [value, handleChange] = useForm(initialValue);
 
   const handleSubmit = (e) => {
-      e.preventDefault();
-      setLoggedIn(true);
-  }
+    e.preventDefault();
+    setLoggedIn(true);
+  };
   return (
     <section id="login">
       <div className="form-wrapper">
-      <img
-          className="badge"
-          src="../badge.png"
-          alt="badge-logo"
-        />
+        <img className="badge" src="../badge.png" alt="badge-logo" />
         <form onSubmit={handleSubmit}>
           <input
             type="text"

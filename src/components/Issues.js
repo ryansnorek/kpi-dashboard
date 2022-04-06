@@ -1,13 +1,12 @@
-import { useState } from "react";
 import { issues } from "../data";
+import useHighlight from "../hooks/useHighlight";
 
 function Issues() {
-  const [issueType, setIssueType] = useState("open");
-  const handleClickType = (e) => setIssueType(e.target.name);
-  const toggleID = (name) => `${issueType === name && "highlight"}`;
+  const [handleClickTarget, toggleID] = useHighlight("open");
 
   const openIssues = issues.length;
   const resolutionTime = 4.2;
+  
   return (
     <section className="issues">
       <div className="header">
@@ -24,10 +23,10 @@ function Issues() {
         </div>
       </div>
       <div className="buttons">
-        <button id={toggleID("open")} onClick={handleClickType} name="open">
+        <button id={toggleID("open")} onClick={handleClickTarget} name="open">
           Open
         </button>
-        <button id={toggleID("closed")} onClick={handleClickType} name="closed">
+        <button id={toggleID("closed")} onClick={handleClickTarget} name="closed">
           Closed
         </button>
       </div>

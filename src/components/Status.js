@@ -5,6 +5,7 @@ function Status() {
   const sites = 10;
   const online = 9;
   const offline = 1;
+  
   return (
     <section className="status">
       <div className="left">

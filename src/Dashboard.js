@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { handleScrollEffect } from "./helper";
 
 import Header from "./components/Header";
 import Status from "./components/Status";
@@ -10,15 +11,6 @@ import Login from "./components/Login";
 
 function Dashboard() {
   const [scrollBreakPoint, setScrollBreakPoint] = useState(false);
-  
-  const handleScroll = () => {
-    const element = document.querySelector(".wrapper");
-    if (element.scrollTop > 60) {
-      setScrollBreakPoint(true);
-    } else {
-      setScrollBreakPoint(false);
-    }
-  };
   const [loggedIn, setLoggedIn] = useState(false);
   
   if (!loggedIn) {
@@ -30,7 +22,7 @@ function Dashboard() {
       <Header scrollBreakPoint={scrollBreakPoint}/>
       <div
         className={`wrapper ${scrollBreakPoint && "scrolled-landing"}`}
-        onScroll={handleScroll}
+        onScroll={() => handleScrollEffect(setScrollBreakPoint)}
       >
           <div className="top">
             <div className="left">
