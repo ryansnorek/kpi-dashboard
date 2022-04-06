@@ -104,7 +104,20 @@ header {
   z-index: 10;
   box-shadow: 0 0 12px var(--darkblue);
   transition: 0.3s ease-in;
-  animation: fade-in 0.6s ease-in;
+  opacity: 0;
+  animation: drop-in 0.4s ease-in 0.2s forwards;
+}
+@keyframes drop-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1);
+  }
 }
 .logo {
   width: 50%;
@@ -360,9 +373,6 @@ header {
 }
 
 /* Login -==--=-=-==--==-=-=-=--=-==-=-=- */
-* {
-  /* border: 1px solid red; */
-}
 #login {
   height: 100vh;
   display: flex;
@@ -388,7 +398,7 @@ header {
 }
 .form-wrapper form {
   height: max-content;
-  width: 240px;
+  width: 340px;
   padding: 0 5%;
   display: flex;
   flex-direction: column;
@@ -396,7 +406,7 @@ header {
   align-items: center;
 }
 .form-wrapper form input {
-  width: 200px;
+  width: 250px;
   font-size: 1.6rem;
   padding: 3%;
   border-radius: 5px;
@@ -411,7 +421,7 @@ header {
 #login button {
   background-color: var(--darkerblue);
   color: var(--light);
-  width: 200px;
+  width: 250px;
   margin: 15px;
   border-radius: 0;
   padding: 5%;
