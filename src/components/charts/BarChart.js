@@ -11,6 +11,7 @@ function BarChart({ period }) {
   );
 }
 export default BarChart;
+
 const dayData = {
   labels: ["6", "12", "18", "24"],
   datasets: [

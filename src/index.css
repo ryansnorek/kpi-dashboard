@@ -359,6 +359,63 @@ header {
 .scrolled-input {
 }
 
+/* Login -==--=-=-==--==-=-=-=--=-==-=-=- */
+* {
+  /* border: 1px solid red; */
+}
+#login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.form-wrapper {
+  background-color: var(--light);
+  height: 475px;
+  width: 400px;
+  border-radius: 9px;
+  box-shadow: 0 0 6px lightgrey;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.form-wrapper .badge {
+  margin-bottom: 15px;
+}
+.form-wrapper form {
+  height: max-content;
+  width: 240px;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper form input {
+  width: 200px;
+  font-size: 1.6rem;
+  padding: 3%;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 1px solid var(--darkerblue);
+  outline-color: var(--gold);
+  color: var(--darkerblue);
+}
+.form-wrapper form input::placeholder {
+  color: lightgrey;
+}
+#login button {
+  background-color: var(--darkerblue);
+  color: var(--light);
+  width: 200px;
+  margin: 15px;
+  border-radius: 0;
+  padding: 5%;
+}
+
 /* Global -==--==-=-=--=-= */
 #dark {
   color: var(--darkblue);
